@@ -1,0 +1,95 @@
+baseURL: https://genway.com.cn/
+theme: hugo-theme-walden
+paginate: 12
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: no
+language: {}
+params:
+  description: Description
+  headline: images/headline/default.jpg
+  keywords: Keywords
+  thumbnail: images/thumbnail/default.jpg
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: yes
+      footnote: yes
+      linkify: yes
+      strikethrough: yes
+      table: yes
+      taskList: yes
+      typographer: yes
+    parser:
+      attribute: yes
+      autoHeadingID: yes
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: no
+      unsafe: yes
+      xHTML: no
+  highlight:
+    codeFences: yes
+    guessSyntax: yes
+    hl_Lines: ''
+    lineNoStart: 1
+    lineNos: yes
+    lineNumbersInTable: no
+    noClasses: yes
+    style: monokai
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 3
+    ordered: no
+    startLevel: 2
+module:
+  hugoVersion:
+    extended: yes
+    min: 0.101.0
+languages:
+  en:
+    author:
+      avatar: images/avatar.jpg
+      description: Hi, I am Homecat, a Shaoxing native living in Shanghai. Reading,
+        hiking, and coding are my hobbies. I have set my blog on Github to record
+        interesting things and share with my friends.
+      email: 13050082@qq.com
+      name: Homecat
+    languageCode: en-US
+    languageName: English
+    menus:
+      main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: 10
+        - identifier: blog
+          name: Blog
+          url: /blog/
+          weight: 20
+    title: Walden
+    weight: 1
+  zh:
+    author:
+      avatar: images/avatar.jpg
+      description: 吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于 Github，录趣事以享亲友。
+      email: 13050082@qq.com
+      name: 家猫
+    languageCode: zh-Hans-CN
+    languageName: 中文
+    menus:
+      main:
+        - identifier: home
+          name: 首页
+          url: /zh/
+          weight: 10
+        - identifier: blog
+          name: 博客
+          url: /zh/blog/
+          weight: 20
+        - identifier: notes
+          name: 笔记
+          url: /zh/notes/
+          weight: 30
+    title: 瓦尔登湖
+    weight: 2

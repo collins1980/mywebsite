@@ -1,0 +1,20 @@
+{{ define "necker" }}
+<div class="container">
+    {{- partial "common/breadcrumb.html" . -}}
+</div>
+
+{{ end }}
+
+{{ define "stager" }}
+<div id="stager">
+    <div class="container">
+        <main>
+            {{- partial "common/list-list.html" . -}}
+        </main>
+        <aside>
+            {{- partial "common/list-category.html" . -}}
+            {{- partial "common/list-tag.html" . -}}
+        </aside>
+    </div>
+</div>
+{{ end }}
